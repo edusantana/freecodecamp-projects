@@ -1,0 +1,34 @@
+/*
+Icons: 
+http://www.alessioatzeni.com/meteocons/res/img/screen.png
+https://raw.githubusercontent.com/manifestinteractive/weather-underground-icons/master/dist/icons/black/icon-preview.png
+*/
+
+.sunny {
+    width: 200px;
+    height: 200px;
+    background: url("https://raw.githubusercontent.com/manifestinteractive/weather-underground-icons/master/dist/icons/black/icon-preview.png") 525px 525px;
+}
+
+/*https://css-tricks.com/css-sprites-with-inline-images/*/
+
+.clip               { position: absolute; top: 0; left: 0; }
+		
+.pos-1              { clip:rect(0 522px 522px 0); }
+.pos-2              { clip:rect(0 96px 48px 48px); left: -48px; }
+.pos-3              { clip:rect(48px 48px 96px 0); top: -48px; }
+.pos-4              { clip:rect(48px 96px 96px 48px); top: -48px; 
+                      left: -48px; }
+
+.sunny {
+	background: url('https://raw.githubusercontent.com/manifestinteractive/weather-underground-icons/master/dist/icons/black/icon-preview.png') no-repeat -549px -541px;
+	width: 175px;
+	height: 175px;
+}
+
+
+.sprite {
+	background: url('imgs/icon-preview.png') no-repeat -549px -541px;
+	width: 175px;
+	height: 175px;
+}
