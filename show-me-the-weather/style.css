@@ -1,34 +1,35 @@
 /*
-Icons: 
+Icons:
 http://www.alessioatzeni.com/meteocons/res/img/screen.png
 https://raw.githubusercontent.com/manifestinteractive/weather-underground-icons/master/dist/icons/black/icon-preview.png
 */
 
 .sunny {
-    width: 200px;
-    height: 200px;
-    background: url("https://raw.githubusercontent.com/manifestinteractive/weather-underground-icons/master/dist/icons/black/icon-preview.png") 525px 525px;
+	background: url('http://iconshow.me/media/images/ui/ios7-icons/png/128/sunny-outline.png') no-repeat;
+	width: 128px;
+	height: 128px;
 }
 
-/*https://css-tricks.com/css-sprites-with-inline-images/*/
-
-.clip               { position: absolute; top: 0; left: 0; }
-		
-.pos-1              { clip:rect(0 522px 522px 0); }
-.pos-2              { clip:rect(0 96px 48px 48px); left: -48px; }
-.pos-3              { clip:rect(48px 48px 96px 0); top: -48px; }
-.pos-4              { clip:rect(48px 96px 96px 48px); top: -48px; 
-                      left: -48px; }
-
-.sunny {
-	background: url('https://raw.githubusercontent.com/manifestinteractive/weather-underground-icons/master/dist/icons/black/icon-preview.png') no-repeat -549px -541px;
-	width: 175px;
-	height: 175px;
+.cloudy {
+	background: url('https://github.com/edusantana/freecodecamp-projects/raw/master/show-me-the-weather/icon-preview.png') no-repeat -437px -268px;
+	width: 110px;
+	height: 72px;
 }
 
+.rain {
+	background: url('https://github.com/edusantana/freecodecamp-projects/raw/master/show-me-the-weather/icon-preview.png') no-repeat -620px -480px;
+	width: 110px;
+	height: 111px;
+}
 
-.sprite {
-	background: url('imgs/icon-preview.png') no-repeat -549px -541px;
-	width: 175px;
-	height: 175px;
+.storm {
+	background: url('https://github.com/edusantana/freecodecamp-projects/raw/master/show-me-the-weather/icon-preview.png') no-repeat -437px -676px;
+	width: 110px;
+	height: 110px;
+}
+
+.partlysunny {
+	background: url('https://github.com/edusantana/freecodecamp-projects/raw/master/show-me-the-weather/icon-preview.png') no-repeat -437px -446px;
+	width: 108px;
+	height: 105px;
 }
