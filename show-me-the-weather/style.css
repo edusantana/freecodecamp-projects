@@ -33,3 +33,38 @@ https://raw.githubusercontent.com/manifestinteractive/weather-underground-icons/
 	width: 108px;
 	height: 105px;
 }
+
+/* icon optional
+A machine-readable text summary of this data point, suitable for selecting an icon for display. If defined, this property will have one of the following values: clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day, or partly-cloudy-night. (Developers should ensure that a sensible default is defined, as additional values, such as hail, thunderstorm, or tornado, may be defined in the future.)
+*/
+
+.clear-day {
+	background: url('img/Sun.svg');
+}
+.clear-night {
+	background: url("img/Moon.svg");
+}
+.rain{
+	background: url("img/Cloud-Rain.svg");
+}
+.snow{
+	background: url("img/Cloud-Snow.svg");
+}
+.sleet{
+	background: url("img/Cloud-Hail-Alt.svg");
+}
+.wind{
+	background: url("img/Cloud-Wind.svg");
+}
+.fog{
+	background: url("img/Cloud-Fog.svg");
+}
+.cloudy{
+	background: url("img/Cloud.svg");
+}
+.partly-cloudy-day{
+	background: url("img/Cloud-Sun.svg");
+}
+.partly-cloudy-night{
+	background: url("img/Cloud-Moon.svg");
+}
