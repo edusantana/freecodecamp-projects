@@ -13,24 +13,26 @@
 
     <!-- https://www.freecodecamp.com/challenges/show-the-local-weather -->
 
-    <div class="container text-center">
-      <div class="col col-md-auto col-sd-auto">
+    <div class="container text-center col-md-auto col-sd-auto col-lg-auto col-xl-auto">
+      <div class="col col-md-auto col-sd-auto col-lg-auto col-xl-auto">
         <h1 class="display-3">Show me the Weather!</h1>
 
         <!--  User Story: I can see the weather in my current location. -->
           <div class="row justify-content-center">
             <div class="col col-md-auto col-sd-auto">
-              <div id="weather" style="width: 128px height: 128px; display: inline-block;"></div>
+              <div id="icon"></div>
             </div>
           </div>
 
-          <!--User Story: I can push a button to toggle between Fahrenheit and Celsius-->
+
           <div>
             <p>
+              <!--User Story: I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.-->
               <span id="temperature"></span>
+              <!--User Story: I can push a button to toggle between Fahrenheit and Celsius-->
               <a href="#" id="unit"></a>
             </p>
-                <!--User Story: I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.-->
+
           </div>
 
         <h2 id="place"></h2>
@@ -44,6 +46,6 @@
     <script src="../dist/js/jquery.min.js"></script>
     <script src="../dist/js/tether.min.js"></script>
     <script src="../dist/js/bootstrap.min.js"></script>
-    <script src="weather.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -4,6 +4,18 @@ http://www.alessioatzeni.com/meteocons/res/img/screen.png
 https://raw.githubusercontent.com/manifestinteractive/weather-underground-icons/master/dist/icons/black/icon-preview.png
 */
 
+body {
+	background-repeat: no-repeat;
+	background: url('img/bg-start.jpg') no-repeat center center fixed;
+}
+
+.container{
+	background-color:rgba(255, 255, 255, 0.2);
+	color: black;
+	font-weight: bold;
+	margin-top: 40px;
+}
+
 h2 {
 	margin-top: 5px;
 }
@@ -38,37 +50,99 @@ h2 {
 	height: 105px;
 }
 
+
+
 /* icon optional
 A machine-readable text summary of this data point, suitable for selecting an icon for display. If defined, this property will have one of the following values: clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day, or partly-cloudy-night. (Developers should ensure that a sensible default is defined, as additional values, such as hail, thunderstorm, or tornado, may be defined in the future.)
 */
 
+#icon {
+	width: 100px;
+	height: 100px;
+ 	background-repeat: no-repeat;
+	display: inline-block;
+}
+
 .clear-day {
 	background: url('img/Sun.svg');
 }
+.bg-clear-day {
+	background: url('img/clear-day.jpg');
+}
+
+
 .clear-night {
 	background: url("img/Moon.svg");
 }
+.bg-clear-night {
+	background: url("img/bg-clear-night.jpg");
+}
+
+
 .rain{
 	background: url("img/Cloud-Rain.svg");
 }
+.bg-rain{
+	background: url("img/bg-rain.jpg");
+}
+
 .snow{
 	background: url("img/Cloud-Snow.svg");
 }
+.bg-snow{
+	background: url("img/bg-snow.jpg");
+}
+
+
 .sleet{
 	background: url("img/Cloud-Hail-Alt.svg");
 }
+.bg-sleet{
+	background: url("img/bg-sleet.jpg");
+}
+
+
+
 .wind{
 	background: url("img/Cloud-Wind.svg");
 }
+.bg-wind{
+	background: url("img/bg-wind.jpg");
+}
+
+
 .fog{
 	background: url("img/Cloud-Fog.svg");
 }
+.bg-fog{
+	background: url("img/bg-fog.jpg");
+}
+
+
 .cloudy{
 	background: url("img/Cloud.svg");
 }
+.bg-cloudy{
+	background: url("img/bg-cloudy.jpg");
+}
+
 .partly-cloudy-day{
 	background: url("img/Cloud-Sun.svg");
 }
+.bg-partly-cloudy-day{
+	background: url("img/bg-partly-cloudy-day.jpg");
+}
+
 .partly-cloudy-night{
 	background: url("img/Cloud-Moon.svg");
+}
+.bg-partly-cloudy-night{
+	background: url("img/bg-partly-cloudy-night.jpg");
+}
+
+.c{
+	background: url("img/c.png");
+}
+.f{
+	background: url("img/f.png");
 }

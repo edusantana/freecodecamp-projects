@@ -1,13 +1,39 @@
 var celsus = true;
 var temperature = {};
 
+
+function unitUpdate(){
+  if(celsus){
+    $("#unit").html('°C');
+    $("#unit").className='c';
+  }else{
+    $("#unit").html('°F');
+    $("#unit").className='f';
+  }
+}
+
 function temperatureUpdate(){
   if (celsus){
     $("#temperature").html(temperature.c);
   }else{
     $("#temperature").html(temperature.f);
   }
+}
 
+function unitChange(){
+  if(celsus){
+    celsus = false;
+  }else{
+    celsus=true;
+  }
+  unitUpdate();
+  temperatureUpdate();
+}
+
+
+function iconUpdate(icon){
+  document.getElementById("icon").className =  icon;
+  document.body.className =  'bg-'+icon;
 }
 
 $(document).ready(function() {
@@ -19,7 +45,6 @@ $(document).ready(function() {
 
 
   if (navigator.geolocation) {
-
     navigator.geolocation.getCurrentPosition(function(position) {
       console.log("latitude: " + position.coords.latitude + "<br>\nlongitude: " + position.coords.longitude);
 
@@ -33,13 +58,15 @@ $(document).ready(function() {
         console.log("Temperature: " + temperature.f);
         console.log("icon: " + weather['currently']["icon"]);
         temperatureUpdate();
-
-        // $("#weather").className = weather['currently']["icon"];
-        document.getElementById("weather").className =  weather['currently']["icon"];
+        unitUpdate();
+        iconUpdate(weather['currently']["icon"]);
       });
 
     });
-
   }
+
+  $( "#unit" ).click(function() {
+    unitChange();
+  });
 
 });
