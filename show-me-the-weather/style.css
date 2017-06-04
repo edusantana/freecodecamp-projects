@@ -4,6 +4,10 @@ http://www.alessioatzeni.com/meteocons/res/img/screen.png
 https://raw.githubusercontent.com/manifestinteractive/weather-underground-icons/master/dist/icons/black/icon-preview.png
 */
 
+h2 {
+	margin-top: 5px;
+}
+
 .sunny {
 	background: url('http://iconshow.me/media/images/ui/ios7-icons/png/128/sunny-outline.png') no-repeat;
 	width: 128px;
