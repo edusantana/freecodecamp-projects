@@ -40,6 +40,7 @@ $(document).ready(function() {
 
 
  $.getJSON( "https://ipapi.co/json", function( data ) {
+   console.log("ipapi data: " + data);
    $("#place").html(data['city'] + "/" + data['region'] + " - " + data['country_name']);
  });
 
@@ -63,6 +64,8 @@ $(document).ready(function() {
       });
 
     });
+  }else{
+
   }
 
   $( "#unit" ).click(function() {
