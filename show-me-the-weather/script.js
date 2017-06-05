@@ -41,14 +41,16 @@ function iconUpdate(icon){
 
 $(document).ready(function() {
 
-
- $.getJSON( "https://ipapi.co/json", function( data ) {
-   ipapi_data = data;
-   console.log("ipapi latitude: " + data['latitude']);
-   console.log("ipapi longitude: " + data['longitude']);
-   $("#place").html(data['city'] + "/" + data['region'] + " - " + data['country_name']);
-   console.log("Longitude: " + temperature.c);
- });
+  $.getJSON( "https://ipapi.co/json", function( data ) {
+    if(data){
+      ipapi_data = data;
+      latitude = data['latitude'];
+      longitude = data['longitude'];
+      $("#place").html(data['city'] + "/" + data['region'] + " - " + data['country_name']);
+    }else{
+      $("#place").html('Unable to find city.');
+    }
+  });
 
 
   if (navigator.geolocation) {
@@ -70,8 +72,6 @@ $(document).ready(function() {
       });
 
     });
-  }else{
-
   }
 
   $( "#unit" ).click(function() {
