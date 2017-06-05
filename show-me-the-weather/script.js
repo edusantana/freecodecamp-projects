@@ -1,5 +1,8 @@
 var celsus = true;
 var temperature = {};
+var ipapi_data;
+var longitude;
+var latitude;
 
 
 function unitUpdate(){
@@ -40,8 +43,11 @@ $(document).ready(function() {
 
 
  $.getJSON( "https://ipapi.co/json", function( data ) {
-   console.log("ipapi data: " + data);
+   ipapi_data = data;
+   console.log("ipapi latitude: " + data['latitude']);
+   console.log("ipapi longitude: " + data['longitude']);
    $("#place").html(data['city'] + "/" + data['region'] + " - " + data['country_name']);
+   console.log("Longitude: " + temperature.c);
  });
 
 

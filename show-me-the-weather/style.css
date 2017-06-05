@@ -20,38 +20,6 @@ h2 {
 	margin-top: 5px;
 }
 
-.sunny {
-	background: url('http://iconshow.me/media/images/ui/ios7-icons/png/128/sunny-outline.png') no-repeat;
-	width: 128px;
-	height: 128px;
-}
-
-.cloudy {
-	background: url('https://github.com/edusantana/freecodecamp-projects/raw/master/show-me-the-weather/icon-preview.png') no-repeat -437px -268px;
-	width: 110px;
-	height: 72px;
-}
-
-.rain {
-	background: url('https://github.com/edusantana/freecodecamp-projects/raw/master/show-me-the-weather/icon-preview.png') no-repeat -620px -480px;
-	width: 110px;
-	height: 111px;
-}
-
-.storm {
-	background: url('https://github.com/edusantana/freecodecamp-projects/raw/master/show-me-the-weather/icon-preview.png') no-repeat -437px -676px;
-	width: 110px;
-	height: 110px;
-}
-
-.partlysunny {
-	background: url('https://github.com/edusantana/freecodecamp-projects/raw/master/show-me-the-weather/icon-preview.png') no-repeat -437px -446px;
-	width: 108px;
-	height: 105px;
-}
-
-
-
 /* icon optional
 A machine-readable text summary of this data point, suitable for selecting an icon for display. If defined, this property will have one of the following values: clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day, or partly-cloudy-night. (Developers should ensure that a sensible default is defined, as additional values, such as hail, thunderstorm, or tornado, may be defined in the future.)
 */
@@ -67,7 +35,7 @@ A machine-readable text summary of this data point, suitable for selecting an ic
 	background: url('img/Sun.svg');
 }
 .bg-clear-day {
-	background: url('img/clear-day.jpg');
+	background: url('img/bg-clear-day');
 }
 
 
